@@ -1,0 +1,22 @@
+#wp-admin-bar-projects .ab-item .ab-icon:before{
+    content: "\f322" !important;
+}
+#wp-admin-bar-boardcast .ab-item .ab-icon:before{
+    content: "\f488" !important;
+    color: #d54121;
+}
+#wp-admin-bar-boardcast .ab-item .ab-icon{
+    margin-a: 0;
+}
+
+#wp-admin-bar-boardcast #ab-pending-notifications {
+    background: #ddd;
+    color: #333;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: 600;
+    moz-border-radius: 10px;
+    khtml-border-radius: 10px;
+    webkit-border-radius: 10px;
+    border-radius: 10px;
+}
