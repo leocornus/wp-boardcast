@@ -1,6 +1,3 @@
-#wp-admin-bar-projects .ab-item .ab-icon:before{
-    content: "\f322" !important;
-}
 #wp-admin-bar-boardcast .ab-item .ab-icon:before{
     content: "\f488" !important;
     color: #d54121;
@@ -19,4 +16,23 @@
     khtml-border-radius: 10px;
     webkit-border-radius: 10px;
     border-radius: 10px;
+}
+
+#wp-admin-bar-boardcast .ab-submenu .ab-item {
+
+    width: 360px;
+    height: auto !important;
+    white-space: pre-wrap !important;
+}
+
+#wp-admin-bar-boardcast .ab-submenu .ab-item .ab-icon:before{
+    /**content: "\f303" !important;*/
+    /*content: "\f348" !important;*/
+    content: "\f310" !important;
+    color: #d54e21;
+}
+
+#wp-admin-bar-boardcast .ab-submenu .ab-item .ab-icon {
+
+    /*height: 32px;*/
 }

@@ -12,8 +12,8 @@ if (isset($_POST['wpb_settings_form_submit']) &&
                        $_POST['wpb_message_url']);
     update_site_option('wpb_message_excerpt', 
                        $_POST['wpb_message_excerpt']);
-    update_site_option('wpb_message_img_url', 
-                       $_POST['wpb_message_img_url']);
+    //update_site_option('wpb_message_img_url', 
+    //                   $_POST['wpb_message_img_url']);
 
     // show the message.
     echo '<div class="updated"><p><strong>Settings Updated</strong></p></div>';
