@@ -34,6 +34,22 @@ function add_boardcast_toolbar_menu() {
         'href' => get_site_option('wpb_message_url'),
         'meta' => FALSE
     ));
+
+    // add the messages.
+    $wp_admin_bar->add_menu(array(
+        'parent' => 'boardcast',
+        'title' => $icon . get_site_option('wpb_message1_title'),
+        'href' => get_site_option('wpb_message1_url'),
+        'meta' => FALSE
+    ));
+
+    // add the messages.
+    $wp_admin_bar->add_menu(array(
+        'parent' => 'boardcast',
+        'title' => $icon . get_site_option('wpb_message2_title'),
+        'href' => get_site_option('wpb_message2_url'),
+        'meta' => FALSE
+    ));
 }
 
 // hook to action 'admin_bar_menu'.
