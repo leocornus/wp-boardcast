@@ -2,9 +2,6 @@
     content: "\f488" !important;
     color: #d54121;
 }
-#wp-admin-bar-boardcast .ab-item .ab-icon{
-    margin-a: 0;
-}
 
 #wp-admin-bar-boardcast #ab-pending-notifications {
     background: #ddd;
