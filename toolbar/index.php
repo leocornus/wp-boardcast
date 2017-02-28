@@ -12,7 +12,8 @@ function register_boardcast_resources() {
 
     // register and enqueue boardcase styles.
     wp_register_style('boardcast-toolbar', 
-                      plugins_url('boardcast-toolbar.css', __FILE__));
+                      plugins_url('boardcast-toolbar.css', __FILE__),
+                      array(), '0.0.1');
     wp_enqueue_style('boardcast-toolbar');
 }
 
