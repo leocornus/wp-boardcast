@@ -5,11 +5,16 @@ if(!defined('WPINC')) {
 }
 
 /**
- * register and enqueue boardcast toolbar styles.
+ * register and enqueue boardcast toolbar resources.
  */
-wp_register_style('boardcast-toolbar', 
-                  plugins_url('boardcast-toolbar.css', __FILE__));
-wp_enqueue_style('boardcast-toolbar');
+add_action('wp_enqueue_scripts', 'register_boardcast_resources');
+function register_boardcast_resources() {
+
+    // register and enqueue boardcase styles.
+    wp_register_style('boardcast-toolbar', 
+                      plugins_url('boardcast-toolbar.css', __FILE__));
+    wp_enqueue_style('boardcast-toolbar');
+}
 
 /**
  * add the boardcast menu on the wordpress toolbar.
