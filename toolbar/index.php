@@ -15,6 +15,10 @@ function register_boardcast_resources() {
                       plugins_url('boardcast-toolbar.css', __FILE__),
                       array(), '0.0.1');
     wp_enqueue_style('boardcast-toolbar');
+    wp_register_script('boardcast-toolbar-js', 
+                      plugins_url('boardcast-toolbar.js', __FILE__),
+                      array(), '0.0.1');
+    wp_enqueue_script('boardcast-toolbar-js');
 }
 
 /**
@@ -23,14 +27,15 @@ function register_boardcast_resources() {
 function add_boardcast_toolbar_menu() {
 
     global $wp_admin_bar;
-    $icon = '<span class="ab-icon"></span>';
+    $icon = '<span class="ab-icon" title="Check our new updates"></span>';
+    $title = $icon . 'Site news';
 
     // add Projects menu for all users.
     $wp_admin_bar->add_menu( array(
         'id' => 'boardcast',
         'parent' => 'top-secondary',
         //'title' => $icon . '<span id="ab-pending-notifications" class="count alert">0</span>'
-        'title' => $icon . 'Site news'
+        'title' => $title
     ));
 
     // add the messages.
