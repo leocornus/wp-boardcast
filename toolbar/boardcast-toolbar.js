@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
     // get ready the tooltip message.
-    var tooltip = '<span class="tip">Check our new updates</span>';
+    var tooltip = '<span class="tip">OPSpedia has new updates</span>';
     $('body').append(tooltip);
 
     // find the right position:
@@ -17,11 +17,11 @@ jQuery(document).ready(function($) {
       "margin-left": "-180px",
     };
 
-    $(selector).animate(showProperty, 2000,
+    $(selector).animate(showProperty, 1000,
                                      function() {
         setTimeout(function() {
             // set the tooltips to disappear
-            $(selector).animate({opacity: 0}, 1000);
+            $(selector).animate({opacity: 0}, 2000);
         }, 3000);
     });
 });
