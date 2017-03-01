@@ -27,7 +27,7 @@ function register_boardcast_resources() {
 function add_boardcast_toolbar_menu() {
 
     global $wp_admin_bar;
-    $icon = '<span class="ab-icon" title="Check our new updates"></span>';
+    $icon = '<span class="ab-icon" boardcast-tracker="deislek"></span>';
     $title = $icon . 'Site news';
 
     // add Projects menu for all users.
