@@ -27,7 +27,10 @@ function register_boardcast_resources() {
 function add_boardcast_toolbar_menu() {
 
     global $wp_admin_bar;
-    $icon = '<span class="ab-icon" boardcast-tracker="deislek"></span>';
+
+    $md5Key = md5(get_site_option('wpb_message_title'));
+    $icon = '<span class="ab-icon" boardcast-tracker="' . $md5Key . 
+            '"></span>';
     $title = $icon . 'Site news';
 
     // add Projects menu for all users.
@@ -37,6 +40,9 @@ function add_boardcast_toolbar_menu() {
         //'title' => $icon . '<span id="ab-pending-notifications" class="count alert">0</span>'
         'title' => $title
     ));
+
+    // reset icon.
+    $icon = '<span class="ab-icon"></span>';
 
     // add the messages.
     $wp_admin_bar->add_menu(array(
