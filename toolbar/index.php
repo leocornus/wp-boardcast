@@ -7,7 +7,8 @@ if(!defined('WPINC')) {
 /**
  * register and enqueue boardcast toolbar resources.
  */
-add_action('wp_enqueue_scripts', 'register_boardcast_resources');
+//add_action('wp_enqueue_scripts', 'register_boardcast_resources');
+add_action('init', 'register_boardcast_resources');
 function register_boardcast_resources() {
 
     // register and enqueue boardcase styles.
