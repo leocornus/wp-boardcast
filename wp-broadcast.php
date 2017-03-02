@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: WP Boardcast
-Plugin URI: http://www.github.com/leocornus/wp-boardcast
-Description: A WordPress plugin to manage and show boardcast messages
+Plugin Name: WP Broadcast
+Plugin URI: http://www.github.com/leocornus/wp-broadcast
+Description: A WordPress plugin to manage and show broaddcast messages
 Version: 0.0.1
 Author: Sean Chen <sean.chen@leocorn.com>
 Author URI: http://www.leocorn.com

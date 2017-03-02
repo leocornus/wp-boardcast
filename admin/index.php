@@ -11,15 +11,15 @@ function wpb_admin_init() {
     add_menu_page('WP Boardcast', 'WP Boardcast', 
                   'manage_options', // this is only for administrator
                   // menu slug, slug is like keyword.
-                  'wp-boardcast/admin/settings.php', 
+                  'wp-broadcast/admin/settings.php', 
                   // the function name leave it empty to use the value in slug.
                   // this will also be the default option page.
                   ''
                  );
     // the general settings page.
-    add_submenu_page('wp-boardcast/admin/settings.php', // parent slug.
+    add_submenu_page('wp-broadcast/admin/settings.php', // parent slug.
                      'General Settings', 'General Settings',
                      'manage_options', 
-                     'wp-boardcast/admin/settings.php'
+                     'wp-broadcast/admin/settings.php'
                     );
 }

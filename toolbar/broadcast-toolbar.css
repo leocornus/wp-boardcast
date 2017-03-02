@@ -1,9 +1,9 @@
-#wp-admin-bar-boardcast .ab-item .ab-icon:before{
+#wp-admin-bar-broadcast .ab-item .ab-icon:before{
     content: "\f488" !important;
     color: #d54121;
 }
 
-#wp-admin-bar-boardcast #ab-pending-notifications {
+#wp-admin-bar-broadcast #ab-pending-notifications {
     background: #ddd;
     color: #333;
     padding: 2px 5px;
@@ -15,21 +15,21 @@
     border-radius: 10px;
 }
 
-#wp-admin-bar-boardcast .ab-submenu .ab-item {
+#wp-admin-bar-broadcast .ab-submenu .ab-item {
 
     width: 360px;
     height: auto !important;
     white-space: pre-wrap !important;
 }
 
-#wp-admin-bar-boardcast .ab-submenu .ab-item .ab-icon:before{
+#wp-admin-bar-broadcast .ab-submenu .ab-item .ab-icon:before{
     /**content: "\f303" !important;*/
     /*content: "\f348" !important;*/
     content: "\f310" !important;
     color: #d54e21;
 }
 
-#wp-admin-bar-boardcast .ab-submenu .ab-item .ab-icon {
+#wp-admin-bar-broadcast .ab-submenu .ab-item .ab-icon {
 
     /*height: 32px;*/
 }

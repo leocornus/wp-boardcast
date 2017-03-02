@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
 
-    var tSelector = '#wp-admin-bar-boardcast > .ab-item > .ab-icon';
+    var tSelector = '#wp-admin-bar-broadcast > .ab-item > .ab-icon';
     // define the cookie name: tooltip-tracker
-    var cookieName = 'boardcast-tracker';
+    var cookieName = 'broadcast-tracker';
     // get cookie value in the tooltip icon,
     var tracker = $(tSelector).attr(cookieName);
     // get the cookie value from browser
