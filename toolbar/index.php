@@ -13,11 +13,11 @@ function register_boardcast_resources() {
     // register and enqueue boardcase styles.
     wp_register_style('boardcast-toolbar', 
                       plugins_url('boardcast-toolbar.css', __FILE__),
-                      array(), '0.0.1');
+                      array(), '0.0.2');
     wp_enqueue_style('boardcast-toolbar');
     wp_register_script('boardcast-toolbar-js', 
                       plugins_url('boardcast-toolbar.js', __FILE__),
-                      array(), '0.0.1');
+                      array(), '0.0.2');
     wp_enqueue_script('boardcast-toolbar-js');
 }
 
