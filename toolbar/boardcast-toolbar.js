@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
     var tSelector = '#wp-admin-bar-boardcast > .ab-item > .ab-icon';
     // define the cookie name: tooltip-tracker
-    var cookieName = 'boardcast-tracker';
+    var cookieName = 'nboardcast-tracker';
     // get cookie value in the tooltip icon,
     var tracker = $(tSelector).attr(cookieName);
     // get the cookie value from browser
@@ -32,14 +32,14 @@ jQuery(document).ready(function($) {
           "opacity": 1,
           "top": "43px",
           "left": left + "px",
-          "margin-left": "-180px",
+          "margin-left": "-220px",
         };
 
         $(selector).animate(showProperty, 1000,
                                          function() {
             setTimeout(function() {
                 // set the tooltips to disappear
-                $(selector).animate({opacity: 0}, 2000);
+                $(selector).animate({opacity: 0}, 3000);
             }, 3000);
         });
     }
