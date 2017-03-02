@@ -7,8 +7,8 @@ add_action('network_admin_menu', 'wpb_admin_init');
  */
 function wpb_admin_init() {
 
-    // add the WP Boardcast section on wp-admin dashboard.
-    add_menu_page('WP Boardcast', 'WP Boardcast', 
+    // add the WP Broadcast section on wp-admin dashboard.
+    add_menu_page('WP Broadcast', 'WP Broadcast', 
                   'manage_options', // this is only for administrator
                   // menu slug, slug is like keyword.
                   'wp-broadcast/admin/settings.php', 

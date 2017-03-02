@@ -44,8 +44,8 @@ if (isset($_POST['wpb_settings_form_submit']) &&
 ?>
 
 <div class="wrap">
-  <h2>WP Boardcast - General Settings</h2>
-  <p>General settings for WP Boardcast.</p>
+  <h2>WP Broadcast - General Settings</h2>
+  <p>General settings for WP Broadcast.</p>
 
   <form name="wpb_settings_form" method="post">
     <input type="hidden" name="wpb_settings_form_submit" value="Y"/>
