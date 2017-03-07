@@ -19,14 +19,14 @@ jQuery(document).ready(function($) {
         document.cookie = cookieName + "=" + tracker;
 
         // get ready the tooltip message.
-        var tooltip = '<span class="tip">OPSpedia has new updates</span>';
+        var tooltip = '<span class="wpb-tip">OPSpedia has new updates</span>';
         $('body').append(tooltip);
 
         // find the right position:
         var left = $(tSelector).offset()['left'];
 
         //var selector = "div.tooltips > span";
-        var selector = "span.tip";
+        var selector = "span.wpb-tip";
 
         var showProperty = {
           "opacity": 1,

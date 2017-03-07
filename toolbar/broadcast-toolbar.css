@@ -37,7 +37,7 @@
 /**
  * styles for the tooltip.
  */
-span.tip {
+span.wpb-tip {
   position: absolute;
   display: block !important;
   width: 280px;
@@ -65,7 +65,7 @@ span.tip {
   z-index: 900;
 }
 
-span.tip:after {
+span.wpb-tip:after {
   content: '';
   position: absolute;
   bottom: 100%;
