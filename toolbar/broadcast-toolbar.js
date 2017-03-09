@@ -16,7 +16,11 @@ jQuery(document).ready(function($) {
         // compare the two, if same do nothing...
     } else {
         // if different, reset the cookie and show tooltip
-        document.cookie = cookieName + "=" + tracker;
+        // set to expire in 10 days.
+        var d = new Date();
+        d.setTime(d.getTime() + (10*24*60*60*1000));
+        document.cookie = cookieName + "=" + tracker + "; " +
+            "expires=" + d.toUTCString();
 
         // get ready the tooltip message.
         var tooltip = '<span class="wpb-tip">OPSpedia has new updates</span>';
