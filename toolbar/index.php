@@ -14,11 +14,11 @@ function register_broadcast_resources() {
     // register and enqueue boardcase styles.
     wp_register_style('broadcast-toolbar', 
                       plugins_url('broadcast-toolbar.css', __FILE__),
-                      array(), '0.0.3');
+                      array(), '0.0.4');
     wp_enqueue_style('broadcast-toolbar');
     wp_register_script('broadcast-toolbar-js', 
                       plugins_url('broadcast-toolbar.js', __FILE__),
-                      array(), '0.0.3');
+                      array(), '0.0.4');
     wp_enqueue_script('broadcast-toolbar-js');
 }
 
@@ -30,8 +30,9 @@ function add_broadcast_toolbar_menu() {
     global $wp_admin_bar;
 
     $md5Key = md5(get_site_option('wpb_message_title'));
+    $animation = get_site_option('wpb_enable_animation');
     $icon = '<span class="ab-icon" broadcast-tracker="' . $md5Key . 
-            '"></span>';
+            '" enable-animation="' . $animation . '"></span>';
     $title = $icon . 'Site news';
 
     // add Projects menu for all users.

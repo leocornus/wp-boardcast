@@ -5,6 +5,9 @@
 if (isset($_POST['wpb_settings_form_submit']) &&
     $_POST['wpb_settings_form_submit'] == 'Y') {
 
+    update_site_option('wpb_enable_animation', 
+                       $_POST['wpb_enable_animation']);
+
     // save settings submit. save user input to database.
     update_site_option('wpb_message_title', 
                        $_POST['wpb_message_title']);
@@ -50,6 +53,23 @@ if (isset($_POST['wpb_settings_form_submit']) &&
   <form name="wpb_settings_form" method="post">
     <input type="hidden" name="wpb_settings_form_submit" value="Y"/>
     <table class="form-table"><tbody>
+      <tr>
+        <th>Enable Animation: </th>
+        <td>
+          <input type="radio" name="wpb_enable_animation" 
+                 value="true"
+            <?php echo (get_site_option('wpb_enable_animation',
+                                        'false') == 'true') ?
+                'checked' : '';?>
+          > true
+          <input type="radio" name="wpb_enable_animation" 
+                 value="false"
+            <?php echo (get_site_option('wpb_enable_animation',
+                                        'false') == 'false') ?
+                'checked' : '';?>
+          > false
+        </td>
+      </tr>
       <tr>
         <th>Message Title: </th>
         <td><input type="text" id="wpb_message_title" 
