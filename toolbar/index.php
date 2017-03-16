@@ -69,6 +69,14 @@ function add_broadcast_toolbar_menu() {
         'href' => get_site_option('wpb_message2_url'),
         'meta' => FALSE
     ));
+
+    // add the messages.
+    $wp_admin_bar->add_menu(array(
+        'parent' => 'broadcast',
+        'title' => $icon . get_site_option('wpb_message3_title'),
+        'href' => get_site_option('wpb_message3_url'),
+        'meta' => FALSE
+    ));
 }
 
 // hook to action 'admin_bar_menu'.
