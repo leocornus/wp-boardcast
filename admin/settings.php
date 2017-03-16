@@ -10,7 +10,7 @@ if (isset($_POST['wpb_settings_form_submit']) &&
 
     // save settings submit. save user input to database.
     update_site_option('wpb_message_title', 
-                       $_POST['wpb_message_title']);
+                       stripslashes($_POST['wpb_message_title']));
     update_site_option('wpb_message_url', 
                        $_POST['wpb_message_url']);
     //update_site_option('wpb_message_excerpt', 
@@ -20,13 +20,13 @@ if (isset($_POST['wpb_settings_form_submit']) &&
 
     // save settings submit. save user input to database.
     update_site_option('wpb_message1_title', 
-                       $_POST['wpb_message1_title']);
+                       stripslashes($_POST['wpb_message1_title']));
     update_site_option('wpb_message1_url', 
                        $_POST['wpb_message1_url']);
 
     // save settings submit. save user input to database.
     update_site_option('wpb_message2_title', 
-                       $_POST['wpb_message2_title']);
+                       stripslashes($_POST['wpb_message2_title']));
     update_site_option('wpb_message2_url', 
                        $_POST['wpb_message2_url']);
 
