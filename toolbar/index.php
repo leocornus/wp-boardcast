@@ -14,11 +14,11 @@ function register_broadcast_resources() {
     // register and enqueue boardcase styles.
     wp_register_style('broadcast-toolbar', 
                       plugins_url('broadcast-toolbar.css', __FILE__),
-                      array(), '0.0.4');
+                      array(), '0.0.5');
     wp_enqueue_style('broadcast-toolbar');
     wp_register_script('broadcast-toolbar-js', 
                       plugins_url('broadcast-toolbar.js', __FILE__),
-                      array(), '0.0.4');
+                      array(), '0.0.5');
     wp_enqueue_script('broadcast-toolbar-js');
 }
 

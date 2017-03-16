@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 
             var showProperty = {
               "opacity": 1,
-              "top": "43px",
+              "top": "42px",
               "left": left + "px",
               "margin-left": "-220px",
             };
